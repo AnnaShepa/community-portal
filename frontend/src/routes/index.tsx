@@ -11,6 +11,7 @@ import PartnersManagementPage from '../components/partners/pages/PartnersManagem
 import PartnerRoute from './PartnerRoute';
 import ProjectDetails from '../components/ProjectDetails';
 import CalendarPage from '../components/calendar/CalendarPage';
+import SurveyPage from '../components/survey/SurveyPage';
 
 const Routes = () => (
   <div>
@@ -22,6 +23,7 @@ const Routes = () => (
 
     <Route exact path="/" component={ProjectGrid} />
     <Route exact path="/community-calendar" component={CalendarPage} />
+    <Route exact path="/survey" component={SurveyPage} />
     <Route exact path="/auth" component={Auth} />
     <Route exact path="/profile/:user_id" component={Profile} />
     <Route exact path="/bookmarked" render={(props: any) => <ProjectGrid filter="bookmarkedProjects" {...props} />}/>
